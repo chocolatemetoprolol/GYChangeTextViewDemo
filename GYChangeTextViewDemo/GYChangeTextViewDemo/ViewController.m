@@ -35,7 +35,7 @@
     tView.layer.borderColor = [UIColor blackColor].CGColor;
     [self.view addSubview:tView];
     self.tView = tView;
-    [self.tView animationWithTexts:[NSArray arrayWithObjects:@"这是第1条",@"这是第2条",@"这是第3条", nil]];
+    [self.tView animationWithTexts:@[@"这是第1条",@"这是第2条",@"这是第3条",@"这是第4条"]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,7 +48,7 @@
 }
 
 - (void)gyChangeTextView:(GYChangeTextView *)textView didTapedAtIndex:(NSInteger)index {
-    NSLog(@"%ld",index);
+    NSLog(@"didTapedAtIndex %ld",index);
 }
 
 @end
